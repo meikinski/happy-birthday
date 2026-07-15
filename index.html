@@ -291,11 +291,13 @@
     <div class="box">
       <p class="lg el" id="e61"><span class="w">There</span> <span class="w">you</span> <span class="w">go.</span></p>
       <div class="g28 el" id="e61s"></div>
-      <p class="md el" id="e62"> <span class="w">Meine</span> <span class="w">Playlist</span> <span class="w">mit</span> <span class="w">meinen</span> <span class="w">Top</span> <span class="w">100</span> <span class="w">Songs</span> <span class="w">aus</span> <span class="w">den</span> <span class="w">letzten</span> <span class="w">Jahren.</span> 
-        
-        <span class="w">Einige</span> <span class="w">begleiten</span> <span class="w">mich</span> <span class="w">sehr</span> <span class="w">lange,</span> <span class="w">andere</span> <span class="w">erst</span> <span class="w">kurz.</span> <span class="w">Zu</span> <span class="w">einigen</span> <span class="w">habe</span> <span class="w">ich</span> <span class="w">wilde</span> <span class="w">Nächte</span> <span class="w">durchtanzt,</span> <span class="w">zu</span> <span class="w">anderen</span> <span class="w">lautstark</span> <span class="w">mitgesungen</span> <span class="w">Manche</span> <span class="w">erinnern</span> <span class="w">mich</span> <span class="w">an</span> <span class="w">ganz</span> <span class="w">spezifische</span> <span class="w">Momente,</span> <span class="w">andere</span> <span class="w">an</span> <span class="w">einen</span> <span class="w">ganzen</span> <span class="w">Sommer.</span> 
-    
-      <span class="w">Das</span> <span class="w">ist</span> <span class="w">irgendwie</span> <span class="w">mein</span> <span class="w">Soundtrack</span> <span class="w">–</span> <span class="w">den</span> <span class="w">ich</span> <span class="w">mit</span> <span class="w">dir</span> <span class="w">teile.</span></p>
+      <p class="md el" id="e62"><span class="w">Meine</span> <span class="w">Playlist</span> <span class="w">mit</span> <span class="w">meinen</span> <span class="w">Top</span> <span class="w">100</span> <span class="w">Songs</span> <span class="w">aus</span> <span class="w">den</span> <span class="w">letzten</span> <span class="w">Jahren.</span></p>
+      <div class="g16 el" id="e62a"></div>
+      <p class="md el" id="e62b"><span class="w">Einige</span> <span class="w">begleiten</span> <span class="w">mich</span> <span class="w">schon</span> <span class="w">sehr</span> <span class="w">lange,</span> <span class="w">andere</span> <span class="w">erst</span> <span class="w">seit</span> <span class="w">Kurzem.</span> <span class="w">Tracks</span> <span class="w">die</span> <span class="w">mich</span> <span class="w">beim</span> <span class="w">Laufen</span> <span class="w">antreiben</span> <span class="w">und</span> <span class="w">im</span> <span class="w">Gym</span> <span class="w">pushen.</span> <span class="w">Songs</span> <span class="w">von</span> <span class="w">Künstlern,</span> <span class="w">die</span> <span class="w">mich</span> <span class="w">seit</span> <span class="w">Jahren</span> <span class="w">nicht</span> <span class="w">loslassen.</span></p>
+      <div class="g16 el" id="e62c"></div>
+      <p class="md el" id="e62d"><span class="w">Tracks</span> <span class="w">bei</span> <span class="w">denen</span> <span class="w">ich</span> <span class="w">lautstark</span> <span class="w">mitsinge,</span> <span class="w">und</span> <span class="w">solche</span> <span class="w">bei</span> <span class="w">denen</span> <span class="w">ich</span> <span class="w">einfach</span> <span class="w">nur</span> <span class="w">kurz</span> <span class="w">melancholisch</span> <span class="w">werde.</span> <span class="w">Wilde</span> <span class="w">Nächte,</span> <span class="w">ganze</span> <span class="w">Sommer,</span> <span class="w">ganz</span> <span class="w">spezifische</span> <span class="w">Momente.</span></p>
+      <div class="g16 el" id="e62e"></div>
+      <p class="md el" id="e62f"><span class="w">Das</span> <span class="w">ist</span> <span class="w">irgendwie</span> <span class="w">mein</span> <span class="w">Soundtrack</span> <span class="w">–</span> <span class="w">den</span> <span class="w">ich</span> <span class="w">mit</span> <span class="w">dir</span> <span class="w">teile.</span></p>
       <div class="g44 el" id="e62s"></div>
       <div class="el" id="e63">
         <a class="sp-btn" href="https://open.spotify.com/playlist/050BYptCJmvPNmNmxh8Zwp?si=a06bf89e5a554431&pt=90c1b2634130406ca2188deb9441bb75" target="_blank">♫ &nbsp;zur Playlist</a>
@@ -420,14 +422,23 @@
       words('e61',80,S,()=>{
         show('e61s',0);
         words('e62',B,S,()=>{
-          show('e62s',0); show('e63',B);
-          setTimeout(()=>{
-            show('e63s',0);
-            words('e64',B,S,()=>{
-              show('e64s',0);
-              words('e65',B,S,()=>{ show('e65s',0); words('e66',B,S); });
+          show('e62a',0);
+          words('e62b',B,S,()=>{
+            show('e62c',0);
+            words('e62d',B,S,()=>{
+              show('e62e',0);
+              words('e62f',B,S,()=>{
+                show('e62s',0); show('e63',B);
+                setTimeout(()=>{
+                  show('e63s',0);
+                  words('e64',B,S,()=>{
+                    show('e64s',0);
+                    words('e65',B,S,()=>{ show('e65s',0); words('e66',B,S); });
+                  });
+                }, B);
+              });
             });
-          }, B);
+          });
         });
       });
     }
